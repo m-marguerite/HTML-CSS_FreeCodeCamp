@@ -1,0 +1,90 @@
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  max-width: 450px;
+  margin: 50px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.todo-list li {
+  margin-bottom: 25px;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.2);
+  margin-left: 10px;
+  accent-color: #7f5af0;
+}
+
+label {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #333;
+}
+
+.sub-item {
+  list-style: none;
+  padding-left: 30px;
+  margin-top: 10px;
+}
+
+.sub-item-link {
+  text-decoration: none;
+  color: #3a86ff;
+  font-weight: 500;
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover animation */
+.sub-item-link::after {
+  content: '';
+  position: absolue;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #3a86ff;
+  transition: width 0.3s ease;
+  transform: rotate(0deg);
+}
+
+/* When hovered */
+.sub-item-link:hover::after {
+  width: 100%;
+  left: 0;
+  background: #ff006e;
+}
+
+.sub-item-link:hover {
+  color: #ff006e;
+  transform: scale(1.05);
+}
+
+/* Visited link */
+.sub-item-link:visited {
+  color: #8338ec;
+}
+
+/* Visited link */
+.sub-item-link:focus {
+  outline: 3px dashed #ffbe0b;
+  outline-offset: 4px;
+}
+
+/* Active (click) */
+.sub-item-link:active {
+  color: #fb5607;
+}
