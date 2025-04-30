@@ -1,0 +1,120 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0;
+  padding: 50px 0;
+  width: calc(100vw - 40px);
+  min-height: calc(100vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flyer-header {
+  text-align: center;
+  position: relative;
+  background-color: #333;
+  padding-bottom: 20px;
+  border-radius: 10px 10px 0 0; /* Rounded corners on top */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px; /* Adding margin-bottom to create space between header and content */
+  overflow: hidden; /* Prevent image overflow during hover */
+}
+
+.event-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover; /* Ensures the image covers the full container area */
+  object-position: center; /* Centers the image */
+  margin-bottom: 15px; /* Adds spacing between the image and the title */
+  transition: transform 0.3s ease-in-out;
+}
+
+.event-title {
+  color: white;
+  font-size: 2.8rem;
+  position: relative;
+  z-index: 10;
+  padding: 10px;
+}
+
+/* Hover effect on event image */
+.flyer-header:hover .event-image {
+  transform: scale(1.03); /* Reduced zoom effect to prevent image from overflowing */
+}
+
+.flyer-header:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4); /* Enhance shadow when hovering */
+}
+
+/* Main Section Styles */
+main {
+  width: 100%;
+  max-width: 800px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature-section, .speaker-section {
+  margin-bottom: 20px;
+  padding: 20px; /* Added padding inside each section for spacing */
+  border-radius: 10px; /* Rounded corners for each section */
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333; /* Title color */
+  transition: color 0.3s ease;
+}
+
+
+.section-content {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.section-divider {
+  width: 50%;
+  margin: 20px auto;
+  border: 1px solid orangered; /* Lighter divider color */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+  margin-top: 20px; /* Adds spacing before the horizontal rule */
+  margin-bottom: 20px; /* Adds spacing after the horizontal rule */
+}
+
+/* Hover effect on sections */
+.feature-section:hover, .speaker-section:hover {
+  background-color: #f9f9f9; /* Light background change */
+  border-radius: 10px; /* Smooth edges on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+}
+
+.feature-section:hover .section-title {
+  color: orange;
+}
+
+.speaker-section:hover .section-title {
+  color: orange;
+}
+
+
+/* Adjust layout so the image appears above the content */
+.flyer-header {
+  display: flex;
+  flex-direction: column; /* Stack image and text vertically */
+  align-items: center;
+}
+
+.event-image {
+  margin-bottom: 10px; /* Adds spacing between the image and the title */
+}
