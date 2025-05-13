@@ -1,0 +1,71 @@
+/* Basic styling for body */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Main container for the magazine layout */
+.magazine-cover {
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* Dividing space into 3 equal columns */
+  grid-template-rows: auto 1fr 1fr; /* Auto for the first row, equal height for the next two rows */
+  grid-template-areas:
+    "title title title"
+    "feature-article feature-article cover-image" /* Feature article spans 2 columns, cover image takes 1 column */
+    "small-article1 small-article2 cover-image" /* Small articles and the cover image in the last row */;
+  gap: 10px;
+  width: 90vw;
+  margin: 20px auto;
+}
+
+/* Title header */
+.title {
+  grid-area: title;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Feature article */
+.feature-article {
+  grid-area: feature-article;
+  background-color: #e0e0e0;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Small article 1 */
+.small-article1 {
+  grid-area: small-article1;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Small article 2*/
+.small-article2 {
+  grid-area: small-article2;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Cover image */
+.cover-image {
+  grid-area: cover-image;
+  background-color: #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.cover-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
