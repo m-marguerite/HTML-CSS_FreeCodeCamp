@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmartFit Landing Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <img
+        id="header-img"
+        src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+        alt="SmartFit Logo"
+      />
+
+      <nav id="nav-bar">
+        <a class="nav-link" href="#features">Features</a>
+        <a class="nav-link" href="#pricing">Pricing</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>SmartFit: Smartwatch for a Smarter Life</h1>
+      <p>Track your fitness. Stay connected. Look stylish.</p>
+      <a href="#contact" class="cta-button">Get Yours Now</a>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+      <h2>Key Features</h2>
+      <ul>
+        <li>🧭 Real-time heart rate monitor</li>
+        <li>📱 Mobile notifications sync</li>
+        <li>⚡ 7-day battery life</li>
+      </ul>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+      <h2>Watch SmartFit in Action</h2>
+      <iframe
+        id="video"
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        title="SmartFit Product Demo"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing">
+      <h2>Choose Your Plan</h2>
+      <div class="pricing-grid">
+        <div class="plan">
+          <h3>Basic</h3>
+          <p>$99</p>
+        </div>
+        <div class="plan">
+          <h3>Premium</h3>
+          <p>$149</p>
+        </div>
+        <div class="plan">
+          <h3>Elite</h3>
+          <p>$199</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact">
+      <h2>Stay in the Loop</h2>
+      <form id="form" action="https://www.freecodecamp.org/email-submit">
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+        <input type="submit" id="submit" value="Subscribe" />
+      </form>
+    </section>
+  </body>
+</html>
