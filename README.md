@@ -37,3 +37,6 @@ HTML-CSS_FreeCodeCamp/
 - Learn to create responsive and visually appealing web pages.  
 - Build a personal library of front-end mini projects for practice and portfolio purposes.  
 
+##  📧 Contact
+
+Author: m-marguerite
